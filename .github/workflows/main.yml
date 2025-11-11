@@ -1,0 +1,10 @@
+name: First workflow
+ on:
+   schedule :
+    -crone: "40 14 * * *"
+ jobs:
+  run-script:
+    runs on: ubuntu-latest
+    steps:
+     -name: print message
+       run: "schedule workflow execution"
